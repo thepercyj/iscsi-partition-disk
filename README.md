@@ -14,9 +14,9 @@ Step 1: List the physical partition table using the command below:
 NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda               8:0    0  100G  0 disk 
 |-sda1            8:1    0    1G  0 part /boot
-`-sda2            8:2    0    9G  0 part 
+-sda2            8:2    0    9G  0 part 
   |-centos-root 253:0    0    8G  0 lvm  /
-  `-centos-swap 253:1    0    1G  0 lvm  [SWAP]
+  -centos-swap 253:1    0    1G  0 lvm  [SWAP]
 sdb               8:16   0  100G  0 disk /mnt
 sr0              11:0    1  918M  0 rom  
 
@@ -56,9 +56,9 @@ Step 4: Verify the disk has been unmounted issuing the command below:
 NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda               8:0    0  100G  0 disk 
 |-sda1            8:1    0    1G  0 part /boot
-`-sda2            8:2    0    9G  0 part 
+-sda2            8:2    0    9G  0 part 
   |-centos-root 253:0    0    8G  0 lvm  /
-  `-centos-swap 253:1    0    1G  0 lvm  [SWAP]
+  -centos-swap 253:1    0    1G  0 lvm  [SWAP]
 sdb               8:16   0  100G  0 disk 
 sr0              11:0    1  918M  0 rom  
 
@@ -75,9 +75,9 @@ Step 6: Verify the disk size has been increased and listed in the volume.
 NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda               8:0    0  100G  0 disk 
 |-sda1            8:1    0    1G  0 part /boot
-`-sda2            8:2    0    9G  0 part 
+-sda2            8:2    0    9G  0 part 
   |-centos-root 253:0    0    8G  0 lvm  /
-  `-centos-swap 253:1    0    1G  0 lvm  [SWAP]
+  -centos-swap 253:1    0    1G  0 lvm  [SWAP]
 sdb               8:16   0  200G  0 disk 
 sr0              11:0    1  918M  0 rom  
 
