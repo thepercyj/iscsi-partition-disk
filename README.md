@@ -17,7 +17,7 @@ sda               8:0    0  100G  0 disk
 `-sda2            8:2    0    9G  0 part 
   |-centos-root 253:0    0    8G  0 lvm  /
   `-centos-swap 253:1    0    1G  0 lvm  [SWAP]
--sdb               8:16   0  100G  0 disk /mnt
+sdb               8:16   0  100G  0 disk /mnt
 sr0              11:0    1  918M  0 rom  
 
 In our case, /dev/sdb is the iscsi mounted partition, you can verify your partition by issuing the command [lsscsi] to view your current iscsi physical disk.
